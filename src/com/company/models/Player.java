@@ -9,7 +9,7 @@ public class Player {
     private int power;
     private int skill;
     private int intelligence;
-    
+
 
     public int getHealth() {
         return health;
