@@ -1,5 +1,7 @@
 package com.company.map;
 
+import java.awt.*;
+
 enum BaseMapCellType {
     PLAYER,
     ENEMY,
@@ -17,4 +19,6 @@ public class BaseMap {
     public void setMap(BaseMapCellType[][] map) {
         this.map = map;
     }
+
+    // TODO: - realize map drawing
 }
