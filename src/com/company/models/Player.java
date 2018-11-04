@@ -10,6 +10,18 @@ public class Player {
     private int skill;
     private int intelligence;
 
+    private int x;
+    private int y;
+
+    public Player instance = new Player();
+
+    public Player getInstance() {
+        return instance;
+    }
+
+    private Player() {
+
+    }
 
     public int getHealth() {
         return health;
@@ -66,4 +78,5 @@ public class Player {
     public void setIntelligence(int intelligence) {
         this.intelligence = intelligence;
     }
+
 }
