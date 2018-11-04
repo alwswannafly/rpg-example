@@ -1,6 +1,7 @@
 package com.company.windows;
 
-import com.company.windows.menu.Menu;
+import com.company.windows.player.Player;
+
 import javax.swing.*;
 
 public class Window extends JFrame {
@@ -12,6 +13,6 @@ public class Window extends JFrame {
         // TODO: - realize with RPG-12
 
         // Change panel only for test your task!
-        getContentPane().add(new Menu());
+        getContentPane().add(new Player());
     }
 }
