@@ -1,6 +1,6 @@
 package com.company.models;
 
-public class Player {
+public class PlayerModel {
     private int health;
     private int experience;
     private int level;
@@ -10,6 +10,14 @@ public class Player {
     private int skill;
     private int intelligence;
 
+    private int x;
+    private int y;
+
+    static public PlayerModel outInstance = new PlayerModel();
+
+    private PlayerModel() {
+
+    }
 
     public int getHealth() {
         return health;
@@ -66,4 +74,5 @@ public class Player {
     public void setIntelligence(int intelligence) {
         this.intelligence = intelligence;
     }
+
 }
