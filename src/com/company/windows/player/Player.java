@@ -7,20 +7,25 @@ import com.company.models.PlayerModel;
 public class Player extends JPanel {
     // TODO: - realize with RPG-10
 
-    private Image background, Hp, Intellegt, Speed, Mana;
-    private int Level, Exp;
-    private Label Hp_l, Intellegt_l, Speed_l, Mana_l;
-    private PlayerModel player = PlayerModel.outInstance;
+    private JButton close;
 
     public Player(){
-        setFocusable(true);
+        setLayout(new GridLayout(1, 6));
+        add(new StatsofPlayer());
+        add(new ActivatedObj());
+        add(new Inventory());
+        setupclose();
+    }
+    void setupclose(){
+        close = new JButton("X");
+//        setBounds(620, 20, 40, 30);
+        add(close);
+    }
 
-        Hp_l = new Label();
-        Hp_l.setForeground(Color.RED);
-        Hp_l.setFont(new Font("serif", 0,15));
-//        Hp_l.setBounds();
-        add(this.Hp_l);
 
 
+    @Override
+    public void paintComponents(Graphics g) {
+        super.paintComponents(g);
     }
 }
